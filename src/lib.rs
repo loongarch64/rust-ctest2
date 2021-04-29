@@ -1020,7 +1020,7 @@ impl TestGenerator {
 
             macro_rules! offset_of {
                 ($ty:ident, $field:ident) => (
-                    (&((*(0 as *const $ty)).$field)) as *const _ as u64
+                    (&((*(0 as const $ty)).$field)) as *const _ as u64
                 )
             }
 

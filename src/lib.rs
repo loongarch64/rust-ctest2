@@ -1054,6 +1054,8 @@ fn default_cfg(target: &str) -> Vec<(String, Option<String>)> {
         ("arm", "32", "little")
     } else if target.starts_with("aarch64") {
         ("aarch64", "64", "little")
+    } else if target.starts_with("loongarch64") {
+        ("loongarch64", "64", "little")
     } else if target.starts_with("mipsel") {
         ("mips", "32", "little")
     } else if target.starts_with("mips64el") {
